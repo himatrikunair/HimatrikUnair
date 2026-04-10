@@ -716,7 +716,7 @@ section {
 }
 
 .about .img-fluid {
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
   height: auto;
 }
@@ -1566,6 +1566,12 @@ section {
   color: #4f4f5a;
   font-weight: 400;
   margin-bottom: 30px;
+}
+
+.hero .img-fluid {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
 }
 
 .hero .btn-book-a-table {
