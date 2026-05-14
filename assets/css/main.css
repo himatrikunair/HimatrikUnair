@@ -745,9 +745,9 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
+/*---------Future Development Why Us Section
 # Why Us Section
---------------------------------------------------------------*/
+
 .why-us .why-box {
   padding: 30px;
   background: var(--color-primary);
@@ -823,10 +823,11 @@ section {
     transform: scale(1.1);
   }
 }
-
-/*--------------------------------------------------------------
-# Stats Counter Section
 --------------------------------------------------------------*/
+
+/*---------Unused Stats Counter Section
+# Stats Counter Section
+
 .stats-counter {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stats-bg.jpg") center center;
   background-size: cover;
@@ -859,6 +860,7 @@ section {
   font-weight: 700;
   color: rgba(255, 255, 255, 0.6);
 }
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Menu Section
@@ -885,8 +887,6 @@ section {
     padding: 10px 0;
   }
 }
-
-
 
 .menu .nav-link i {
   padding-right: 15px;
@@ -963,9 +963,9 @@ section {
   color: var(--color-primary);
 }
 
-/*--------------------------------------------------------------
+/*---------Unused Testimonials Section
 # Testimonials Section
---------------------------------------------------------------*/
+
 .testimonials .section-header {
   margin-bottom: 40px;
 }
@@ -1046,10 +1046,11 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
 }
-
-/*--------------------------------------------------------------
-# Events Section
 --------------------------------------------------------------*/
+
+/*---------Unused Events Section
+# Events Section
+
 .events .container-fluid {
   padding: 0;
 }
@@ -1120,10 +1121,11 @@ section {
 .events .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
 }
-
-/*--------------------------------------------------------------
-# Chefs Section
 --------------------------------------------------------------*/
+
+/*---------Unused Chefs Section
+# Chefs Section
+
 .chefs .chef-member {
   overflow: hidden;
   text-align: center;
@@ -1213,10 +1215,11 @@ section {
   right: 8px;
   opacity: 1;
 }
-
-/*--------------------------------------------------------------
-# Book A Table Section
 --------------------------------------------------------------*/
+
+/*---------Unused Book A Table Section
+# Book A Table Section
+
 .book-a-table .reservation-img {
   min-height: 500px;
   background-size: cover;
@@ -1351,6 +1354,7 @@ section {
     transform: rotate(360deg);
   }
 }
+---------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Gallery Section
