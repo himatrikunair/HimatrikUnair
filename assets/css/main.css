@@ -12,15 +12,15 @@
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Amatic SC", sans-serif;
+  --font-primary: "Bebas Neue", sans-serif;
   --font-secondary: "Inter", sans-serif;
 }
-
+/*Poppins", sans-serif , Amatic SC , */
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ce1212;
-  --color-secondary: #c62929;
+  --color-primary: #820002;
+  --color-secondary: #a80003;
 }
 
 /* Smooth scroll behavior */
@@ -290,7 +290,7 @@ section {
 .header .logo h1 {
   font-size: 28px;
   font-weight: 700;
-  color: #c32020;
+  color: var(--color-primary);
   margin: 0;
   font-family: var(--font-secondary);
 }
@@ -586,162 +586,72 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .about-img {
-  min-height: 500px;
+.about .content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 550;
+  margin-bottom: 25px;
+  color: var(--color-secondary);
+  text-shadow:
+    2px 2px 0 rgba(120, 20, 20, 0.35),
+    4px 5px 8px rgba(0, 0, 0, 0.12);
 }
 
-.about h3 {
-  font-weight: 700;
-  font-size: 36px;
-  margin-bottom: 30px;
-  font-family: var(--font-secondary);
-}
-
-.about .call-us {
-  left: 10%;
-  right: 10%;
-  bottom: 10%;
-  background-color: #fff;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  text-align: center;
-}
-
-.about .call-us h4 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-family: var(--font-default);
-}
-
-.about .call-us p {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--color-primary);
-}
-
-.about .content ul {
+.about .content ul.filosofi-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.about .content ul li {
-  padding: 0 0 8px 26px;
-  position: relative;
+.about .content ul.filosofi-list li {
+  padding: 0;
+  margin-bottom: 15px;
 }
 
-.about .content ul i {
-  position: absolute;
-  font-size: 20px;
-  left: 0;
-  top: -3px;
-  color: var(--color-primary);
+/* Desktop */
+.about .logo-kabinet{
+    width: auto;
+    max-width: 350px;
 }
 
-.about .content p:last-child {
-  margin-bottom: 0;
+/* Tablet */
+@media (max-width: 992px){
+    .about .logo-kabinet{
+        max-width: 300px;
+    }
 }
 
-.about .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(206, 18, 18, 0.4) 52%);
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
-  overflow: hidden;
-}
-
-.about .play-btn:before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-  animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(206, 18, 18, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-.about .play-btn:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.about .play-btn:hover:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  -webkit-animation: none;
-  animation: none;
-  border-radius: 0;
-}
-
-.about .play-btn:hover:after {
-  border-left: 15px solid var(--color-primary);
-  transform: scale(20);
-}
-
-.about .img-fluid {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-}
-
-@-webkit-keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
+/* Mobile */
+@media (max-width: 992px) {
+  .about .logo-kabinet {
+    max-width: 300px;
   }
 }
 
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
+/* Mobile */
+@media (max-width: 768px) {
+
+  .about .logo-kabinet {
+    max-width: 250px;
   }
 
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
+  .about .content {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .about .content h3 {
+    text-align: center;
+  }
+
+  .about .content ul.filosofi-list {
+    text-align: center;
+  }
+
+  .about .content ul.filosofi-list li {
+    text-align: center;
   }
 }
 
@@ -962,6 +872,83 @@ section {
   font-weight: 700;
   color: var(--color-primary);
 }
+
+/*--------------------------------------------------------------
+# Department Card
+--------------------------------------------------------------*/
+
+.department-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.department-card {
+  background: #fff;
+  border-radius: 25px;
+  padding: 35px 20px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.department-card:hover {
+  transform: none;
+}
+
+.department-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.department-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+
+  .department-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .department-card {
+    padding: 25px 10px;
+  }
+
+  .department-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .department-card h3 {
+    font-size: 16px;
+  }
+
+}
+
+.kabinet-button {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.kabinet-button a {
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  background: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.kabinet-button a:hover {
+  transform: translateY(-5px);
+}   
 
 /*---------Unused Testimonials Section
 # Testimonials Section
@@ -1406,6 +1393,20 @@ section {
   height: 100%;
 }
 
+.contact .info-item {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact .info-item:hover {
+  transform: translateY(-5px);
+}
+
+.contact .info-item {
+  cursor: pointer;
+}
+
 .contact .info-item .icon {
   display: flex;
   align-items: center;
@@ -1558,8 +1559,11 @@ section {
   font-size: 64px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--color-secondary);
-  font-family: var(--font-primary);
+  color: var(--color-primary);
+  font-family: "Poppins", sans-serif;
+  text-shadow:
+    2px 2px 0 rgba(120, 20, 20, 0.35),
+    4px 5px 8px rgba(0, 0, 0, 0.12);
 }
 
 .hero h2 span {
@@ -1567,7 +1571,7 @@ section {
 }
 
 .hero p {
-  color: #4f4f5a;
+  color: #222224;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -1576,6 +1580,21 @@ section {
   max-width: 400px;
   width: 100%;
   height: auto;
+}
+
+.hero .logo-hima{
+    max-width: 400px;
+}
+
+.hero .logo-kabinet{
+    max-width: 300px;
+}
+
+@media (max-width:768px){
+
+    .hero .logo-hima{
+        max-width:250px;
+    }
 }
 
 .hero .btn-book-a-table {
@@ -1618,6 +1637,22 @@ section {
 
 .hero .btn-watch-video:hover i {
   color: rgba(206, 18, 18, 0.8);
+}
+
+.hero .btn-history {
+  display: inline-block;
+  padding: 12px 35px;
+  margin-top: 10px;
+  border-radius: 50px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero .btn-history:hover {
+  background: var(--color-secondary);
+  color: #fff;
 }
 
 @media (max-width: 640px) {
@@ -1720,3 +1755,309 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Inner Page Header
+--------------------------------------------------------------*/
+
+.inner-page .header {
+  border-bottom: 1px solid #eee;
+}
+
+
+/*--------------------------------------------------------------
+# History Page
+--------------------------------------------------------------*/
+
+.history-page {
+  padding: 160px 0 80px;
+  min-height: 100vh;
+}
+
+.history-page h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--color-secondary);
+}
+
+.history-page p {
+  max-width: 900px;
+  margin: 20px auto;
+  line-height: 1.8;
+  color: #555;
+}
+
+/*--------------------------------------------------------------
+# Kabinet Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Main Kabinet Section
+--------------------------------------------------------------*/
+
+.kabinet-main {
+  padding: 160px 0 80px;
+}
+
+.kabinet-logo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+@media (max-width:768px){
+
+    .kabinet-logo{
+        max-width: 200px;
+    }
+
+}
+
+.kabinet-main h1 {
+  padding-top: 25px;
+  color: var(--color-primary);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  text-shadow:
+    2px 2px 0 rgba(120, 20, 20, 0.35),
+    4px 5px 8px rgba(0, 0, 0, 0.12);
+}
+
+/*--------------------------------------------------------------
+# Vision & Mission
+--------------------------------------------------------------*/
+
+.vision-mission {
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+  justify-content: center;
+}
+
+.vision-mission .visi,
+.vision-mission .misi {
+  background: #fff;
+  padding: 35px;
+  border-radius: 25px;
+  width: 45%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+}
+
+.vision-mission h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: var(--color-primary);
+}
+
+/* VISI */
+
+.visi-highlight {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--color-secondary);
+}
+
+.visi-values {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.visi-values span {
+  color: var(--color-primary);
+  padding: 0 4px;
+}
+
+.visi p {
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* MISI */
+
+.misi-list {
+  text-align: left;
+}
+
+.misi-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.misi-item + .misi-item {
+  margin-top: 22px;
+}
+
+.misi-number {
+  flex-shrink: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-primary);
+  padding-top: 2px;
+}
+
+.misi-item p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/*--------------------------------------------------------------
+# Logo Philosophy Section
+--------------------------------------------------------------*/
+
+.logo-philosophy {
+  padding: 80px 0;
+}
+
+.logo-philosophy img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.logo-philosophy {
+    text-align: left;
+}
+
+.logo-philosophy h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-family: var(--font-primary);
+}
+
+.logo-philosophy h2 span {
+  color: var(--color-primary);
+}
+
+.logo-philosophy ul {
+  padding-left: 20px;
+}
+
+.logo-philosophy li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px){
+  .logo-philosophy {
+    text-align: left;
+  }
+
+  .logo-philosophy h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .logo-philosophy ul {
+    padding-left: 20px;
+  }
+
+  .logo-philosophy li {
+    margin-bottom: 16px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Kabinet Section
+--------------------------------------------------------------*/
+.kabinet-section .section-header p {
+  font-family: var(--font-primary);
+  font-weight: 400;
+}
+
+.kabinet-section {
+  padding: 80px 0;
+}
+
+/* Main Photo */
+.cabinet-photo img {
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+
+/*--------------------------------------------------------------
+# Team Card
+--------------------------------------------------------------*/
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:24px;
+}
+
+.team-card{
+    background:#fff;
+    padding:8px;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s ease;
+}
+
+.team-card img{
+    width:100%;
+    display:block;
+    border-radius:16px;
+    transition:.3s ease;
+}
+
+.team-card:hover{
+    box-shadow:0 12px 28px rgba(0,0,0,.12);
+}
+
+.team-card:hover img{
+    transform:scale(1.03);
+}
+
+.team-grid{
+    grid-template-columns:repeat(5,1fr);
+}
+
+@media (max-width:768px){
+
+    .team-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:18px;
+    }
+
+}
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+
+  .vision-mission {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision-mission .visi,
+  .vision-mission .misi {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .kabinet-main h1 {
+    font-size: 34px;
+  }
+}
+/*--------------------------------------------------------------
+# End Kabinet Page
+--------------------------------------------------------------*/
